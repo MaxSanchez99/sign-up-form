@@ -76,6 +76,12 @@ h6 {
 }
 
 
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body {
     margin: 0;
@@ -87,13 +93,115 @@ body {
 .left {
     background-image: url('images/plants.jpg');
     background-size: cover;
+    width: 40vw;
+    height: 100vh;
+    font-size: 50px;
 }
+
+.left>div {
+    margin-top: 20vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-family: 'Norse', serif;
+    font-size: 128px;
+    color: white;
+    text-align: center
+}
+
+img {
+    height: 1em;
+    display: inline-block;
+}
+
+.right {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+}
+
+#first-p {
+    margin-bottom: 25px;
+    padding-right: 100px;
+}
+
+.intro {
+    padding: 170px 100px 50px 50px;
+    height: 35vh;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#action {
+    padding: 25px 100px 20px 50px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    flex-grow: 1;
+}
+
 
 .row {
     display: flex;
+    justify-content: flex-start;
+    gap: 7rem;
+    padding: 0px 100px 15px 50px;
+    background-color: white;
+}
+
+#last-row {
+    padding-bottom: 40px;
+}
+
+input {
+    width: 250px;
+    border: #E5E7EB 1px solid;
+    border-radius: 5px;
+}
+
+input[type='password']:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border: solid 1px blue;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.button {
+    padding: 25px 100px 20px 50px;
+    border-top: solid rgb(235, 235, 235) 8px;
+}
+
+button {
+    letter-spacing: normal;
+    font-size: 18px;
+    width: 225px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .field {
     display: flex;
     flex-direction: column;
+}
+
+.button>div {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48
 }
