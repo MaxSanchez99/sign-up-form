@@ -177,7 +177,18 @@ input:focus {
 
 .button {
     padding: 25px 100px 20px 50px;
-    border-top: solid rgb(235, 235, 235) 8px;
+    position: relative;
+}
+
+.button::before {
+    background-image: linear-gradient(to top, rgb(249, 249, 249) 0%, rgb(235, 235, 235) 100%);
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    top: 0;
 }
 
 button {
